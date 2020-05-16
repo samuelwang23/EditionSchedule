@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans, sans-serif;
+}
+body{
+    background-image: linear-gradient(120deg, #f6c206, #fda085);
+    color: #ffffff;
+    min-height: 100vh;
+}
+header{
+    font-size: 1.7rem;
+}
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button, form select{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+form input, form select{
+    margin: 0.3em;
+    width: 25vh;
+    border: sandybrown 1px;
+}
+.eventNameInput{
+    width: 45vh;
+}
+.eventDateInput{
+    width: 45vh;
+    font-size: 2rem;
+    border-radius: 30px;
+    margin: 1rem;
+}
+form button{
+    color: #fda085;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    color: white;
+    background: #fda085;
+}
+.eventContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eventList{
+    min-width: 60%;
+    list-style: none;
+
+}
+
+.event{
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.deleteBtn{
+    background: #ff6f47;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+}
+.fa-trash{
+    pointer-events: none;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(10deg);
+    transition-duration: 1s;
+    opacity: 0;
+}
+.eventTypeInputWrapper{
+    margin: 1rem;
+    position: relative;
+    #overflow: hidden;
+}
+select{
+    #color: #ff6f47;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+    /*-webkit-appearance: none;*/
+    /*-moz-appearance: none;*/
+    /*text-indent: 1px;*/
+    /*text-overflow: '';*/
+}
+
+.eventTypeInputWrapper:after{
+    content: "\25bc";
+    position: absolute;
+    background: #ff6f47;
+    padding: 1rem;
+    top: 0;
+    pointer-events: none;
+}
+
+
